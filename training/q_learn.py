@@ -3,6 +3,7 @@ import argparse
 import ast
 import os
 import sys
+sys.path.append(".")
 sys.path.append("..")
 import architectures.q_graph as q_graph
 import random
@@ -169,8 +170,8 @@ def main(
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--outputDirectory', help="The output directory. Default: './output_q_learn_no_trajectories'",
-                        default='./output_q_learn_no_trajectories')
+    parser.add_argument('--outputDirectory', help="The output directory. Default: './output_q_learn'",
+                        default='./output_q_learn')
     parser.add_argument('--numberOfNodes', help="The number of nodes. Default: 12", type=int, default=12)
     parser.add_argument('--connectivityAverage', help="The approximate connectivity average. Default: 2.0", type=float,
                         default=2.0)
