@@ -45,7 +45,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--outputDirectory', help="The output directory. Default: './output_generate_nodes_edges'",
                         default='./output_generate_nodes_edges')
-    parser.add_argument('--numberOfNodes', help="The number of nodes. Default: 8", type=int, default=8)
+    parser.add_argument('--numberOfNodes', help="The number of nodes. Default: 12", type=int, default=12)
     parser.add_argument('--connectivityAverage', help="The approximate connectivity average. Default: 2.0", type=float,
                         default=2.0)
     parser.add_argument('--connectivityStdDev', help="The approximate connectivity standard deviation. Default: 0.0",
